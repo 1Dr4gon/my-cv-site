@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/my-cv-site/',
   title: 'Majd',
   description: 'Personal CV and Portfolio',
   head: [

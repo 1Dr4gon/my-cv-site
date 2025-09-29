@@ -7,7 +7,8 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "build": "vuepress build docs",
-    "serve": "vuepress dev docs --port 8080"
+    "serve": "vuepress dev docs --port 8080",
+    "deploy": "vuepress build docs && gh-pages -d docs/.vuepress/dist"
   },
   "keywords": [
     "cv",
@@ -20,8 +21,9 @@
   "author": "Majd Samer Askar <Majdsamer14@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.9.10",
     "@vuepress/plugin-back-to-top": "^1.9.10",
-    "@vuepress/plugin-medium-zoom": "^1.9.10"
+    "@vuepress/plugin-medium-zoom": "^1.9.10",
+    "gh-pages": "^6.3.0",
+    "vuepress": "^1.9.10"
   }
 }
